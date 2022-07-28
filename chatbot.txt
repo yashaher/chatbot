@@ -1,0 +1,33 @@
+from nltk.chat.util import Chat, reflections
+
+D = [
+      [
+        r"hi|hello|hey",
+        ["hello","hey there"]
+      ],
+      [
+        r"(.)courses(.)",
+        ["BE in CSE(DS)\n BE in AI(DS)\n BE in COMPS\n BE in IT\n BE in CIVIL\n BE in MECHANICS\n BE in EXTC"]
+      ],
+    [
+        r"seats (.*)",
+        ["15 for cse(ds)\n 15 for AI(DS)\n 17 for COMPS\n 10 for IT\n 15 for CIVIL\n 20 for MECHANICS\n 20 for EXTC "]
+    ],
+    [
+        r"library(.*)",
+        ["good in library facility"]
+
+    ],
+        [
+            
+            r"(.)principle|principle(.)",
+        ["Dr.Harish Vankudre"]
+            ]
+]
+def bott():
+    print("VIDYAVARDHINI'S COLLEGE OF ENGINEERING")
+
+chat = Chat(D, reflections)
+if _name_ == "_main_":
+    bott()
+    chat.converse()
